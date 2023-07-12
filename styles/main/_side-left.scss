@@ -1,0 +1,43 @@
+.side-left{
+    padding-top: 60px;
+    height: 100vh;
+    // max-height: 100vh;
+    color: #707070;
+    top: 0;
+    position: sticky;
+}
+
+.side-left .item-activity{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 1em;
+}
+
+.side-left .more-activities{
+    color: var(--blue);
+    margin-bottom: 1em;
+    font-weight: 400;
+}
+
+.side-left .material-symbols-outlined{
+    color: var(--blue);
+}
+
+.side-left .title-shortcut{
+    font-weight: 500;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    font-size: 1.2rem;
+}
+
+.side-left .shortcut-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.shortcut-img img{
+    border-radius: 5px;
+}

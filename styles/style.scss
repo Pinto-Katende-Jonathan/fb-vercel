@@ -1,0 +1,30 @@
+/* ================== Font ================*/
+@import './font';
+
+/*================== Reset ==================*/
+@import './reset';
+
+/* ================== Initials variables ==================*/ 
+@import './variables/root-variables';
+
+/*Scrollbar*/
+@import './scrollbar';
+
+/* Body */
+body{
+    background-color: var(--bg-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+/* ================== Header ==================*/ 
+@import './header/header';
+
+/* ================== Main contennt ================== */ 
+@import './main/main';
+
+@media only screen and (max-width : 1100px){
+    .side-left{
+        height : auto;
+    }
+}

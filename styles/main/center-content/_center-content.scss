@@ -1,0 +1,17 @@
+.center-container{
+    padding-top: 60px;
+}
+
+.center-container .stories{
+    display: flex;
+    justify-content: center;
+}
+
+/* STORY */
+@import './story';
+
+/* Center container main */
+@import './center-main';
+
+/*Load more publication Button*/
+@import './button-load-more';

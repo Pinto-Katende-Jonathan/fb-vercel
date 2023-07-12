@@ -1,0 +1,48 @@
+.hd-searchbar{
+    display: flex;
+    background: var(--bg-color);
+    padding: 10px 1.9rem;
+    border-radius: 50px;
+    color: var(--grey);
+    @media screen and (max-width:320px) {
+        padding: .5em; 
+        max-width: 120px;       
+    }
+}
+
+.hd-searchbar .material-symbols-outlined{
+    padding-right: 10px;
+}
+
+.hd-searchbar input{
+    outline: none; // onfucus qu'il n'ait pas de bordure
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+}
+
+/* Profil */ 
+.hd-profile-img{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+.hd-profile-img img{
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.hd-profile-img .profile-active{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    background-color: var(--green);
+    top: 0;
+    right: 0;
+}

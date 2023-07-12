@@ -1,0 +1,135 @@
+.side-right{
+    // margin-top: 60px;
+    background-color: var(--white);
+    border-radius: 10px;
+    
+    margin-top: 65px;
+    padding:calc(60px + .5rem) 1rem;
+    max-height: 100%;
+    top: 0;
+    position: sticky;
+    color: var(--grey);
+}
+
+.header-hd{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    font-size: .9em;
+}
+
+.sdr-title:first-child{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.hd-action{
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.event-date{
+    background-color: white;
+    width: 5rem;
+    min-width: 5rem;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 1px 3px 5px black;
+
+    @media only screen and (max-width: 870px) {
+        min-height: 90px;
+        width: 9rem;
+        min-width: 9rem;
+    }
+}
+
+.event-date .date-month{
+    background-color: var(--blue);
+    color: white;
+    text-align: center;
+    padding: 2px 10px;
+}
+
+.event-date .date-day{
+    padding: 21px 25px;
+    text-align: center;
+    color: var(--grey);
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.event-item{
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.event-info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    justify-content: space-between;
+}
+
+.event-info .ev-title{
+    font-weight: 600;
+}
+
+.more-info{
+    color: var(--blue);
+    font-size: .9em;
+}
+
+.ev-adress{
+    display: flex;
+    align-items: center;
+    font-size: .8em;
+}
+
+.sdr-body{
+    margin-bottom: 1em;
+}
+
+.body-bd{
+    height: 7.5em;
+    width: 100%;
+}
+
+.body-bd .bd-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.user-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.user-item .au-img-container{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-right: 1em;
+}
+.user-item img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.user-item .au-img-container::after{
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background-color: var(--green);
+    z-index: 3;
+    bottom: 2px;
+    right: 2px;
+    border-radius: 50%;
+    border: 1px solid white;
+}

@@ -1,0 +1,11 @@
+@import './variables';
+
+:root{
+    --blue: #{$blue-color};
+    --grey: #{$light-grey};
+    --white : #{$white-color};
+    --bg-color : #{$bg-color};
+    --green : #{$green-color};
+    --black : #{$black-color};
+    --red : #{$red};
+}

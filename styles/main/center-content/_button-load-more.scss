@@ -1,0 +1,16 @@
+.btn-load-more{
+    text-align: center;
+}
+.load-more{
+    background-color: transparent;
+    border: 1px solid var(--blue);
+    padding: .7em 2em;
+    cursor: pointer;
+    transition: all .2s;
+    font-size: .825em;
+}
+
+.load-more:active{
+    background-color: var(--blue);
+    color: var(--white);
+}

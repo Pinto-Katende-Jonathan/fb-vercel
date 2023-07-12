@@ -1,0 +1,163 @@
+.publication{
+    width: 100%;
+    background-color: var(--white);
+    margin-bottom: 1em;
+    border-radius: 10px;
+    padding: 1em 1.5em;
+    color: var(--grey);
+    @media screen and (max-width:550px) {
+        padding: .7em 1%;
+    }
+}
+
+/* Pub header */ 
+.publication .pub-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.pub-header .profile-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-info .profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.profile-detail{
+    padding-left: 1em;
+}
+
+.profile-detail>*{
+    display: block;
+}
+
+.profile-detail .name-profile{
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.profile-detail .pub-date{
+    font-size: .9em;
+}
+
+.pub-setting{
+    cursor: pointer;
+}
+
+/* Pub body */
+.pub-description{
+    font-size: .98rem;
+    line-height: 1.5em;
+    margin-bottom: 2em;
+} 
+
+.pub-description .pub-key-word{
+    font-weight: 600;
+}
+
+.pub-description .external-link a{
+    color: var(--blue);
+} 
+
+.pub-body-img{
+    height: 22em;
+    overflow: hidden;
+    border-radius: 8px;
+    @media screen and (max-width:800px){
+        height: 14em;
+    }
+}
+
+.pub-body-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Pub footer */
+.publication .pub-footer{
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    padding: 1em 3em;
+    @media screen and (max-width:550px){
+        padding: 1em 0;
+        gap: .5em;
+    }
+
+    @media screen and (max-width: 250px){
+        flex-wrap: wrap;
+    }
+} 
+
+.pub-icon-container{
+    display: flex;
+    align-items: center;
+    font-size: .9em;
+    padding-right: 1.5em;
+}
+.footer-icon{
+    padding-right: .7em;
+}
+
+.pub-icon-container:first-child .footer-icon{
+    color : var(--blue)
+}
+
+/* My own pub*/
+.pub-body{
+    width: 100%;
+    padding-left: 3em;
+    padding-right: 3em;
+    @media screen and (max-width:800px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.pub-author .pub-body textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--grey);
+    color: var(--grey);
+    font-size: 1rem;
+} 
+
+.pub-author .pub-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*On parcours le dictionaire contenant le nom de l'icone et sa valeur associée(la cpouleur), 
+on affecte à chaque icone une couleur respective à sa valeur associée*/
+@each $key, $value in $author-pub-color{
+    .pub-author .#{$key}-icon{
+        color: $value;
+        padding-right: .6em;
+
+        @media screen and (max-width:550px) {
+            padding-right: 0.3em;
+        }
+    }
+}
+
+@media screen and (max-width : 200px){
+    .pub-description a{
+        text-overflow: ellipsis;
+        word-break: break-all;
+    }
+}
